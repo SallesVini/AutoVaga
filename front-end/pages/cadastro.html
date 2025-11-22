@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cadastro</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/cadastro.css" />
+</head>
+
+<body>
+  <div class="login-card">
+    <div>
+      <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Ícone Usuário" />
+    </div>
+    <div class="form-section">
+      <h4>cadastrar!</h4>
+
+      <input type="text" id="nome" class="form-control mb-2" placeholder="Nome do Funcionário" />
+      <input type="email" id="usuario" class="form-control mb-2" placeholder="E-mail" />
+      <input type="text" id="cpf" class="form-control mb-2" placeholder="CPF" />
+
+      <div class="input-group mb-2">
+        <input type="password" id="senha" class="form-control" placeholder="Senha" />
+        <span id="verSenha" class="input-group-text toggle-password">👁️</span>
+      </div>
+
+      <div class="input-group mb-2">
+        <input type="password" id="confirmSenha" class="form-control" placeholder="Confirmar Senha" />
+        <span id="verConfirmSenha" class="input-group-text toggle-password">👁️</span>
+      </div>
+
+      <div id="msgSucess" class="text-success mb-2"></div>
+      <div id="msgError" class="text-danger mb-2"></div>
+
+      <button type="button" class="btn btn-login mt-3" onclick="cadastrar()">Cadastrar</button>
+
+      <div class="text-end mt-3 mb-3">
+        <span>Já tem cadastro? Então: </span>
+        <a href="../index.html" class="text-primary text-decoration-none">Faça login</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/registrar.js"></script>
+</body>
+</html>

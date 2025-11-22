@@ -1,0 +1,63 @@
+/* login */
+body {
+    background: 
+        url('../img/back3.jpg') no-repeat center center fixed,
+        linear-gradient(135deg, #3b82f6, #1e3a8a);
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: 600px;
+    max-width: 90%;
+}
+
+.login-card img {
+    width: 200px;
+    height: auto;
+}
+.form-section {
+    flex: 1;
+}
+.form-control {
+    border-radius: 20px;
+    padding: 12px 15px;
+    font-size: 14px;
+}
+.btn-login {
+    background-color: #3b82f6;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+.btn-login:hover {
+    background-color: #2563eb;
+}
+h4 {
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+}
+.form-check-input {
+    margin-right: 5px;
+}
+
+#msgSucess, #msgError {
+    font-weight: bold;
+}

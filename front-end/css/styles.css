@@ -1,0 +1,114 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Sidebar fixa */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 220px;
+    height: 100%;
+    background: #2563eb;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.sidebar h4 {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+    display: block;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
+/* Conteúdo principal */
+.main-content {
+    margin-left: 220px;
+    padding: 20px;
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que ocupa toda altura da viewport */
+}
+
+/* Topbar */
+.topbar {
+    display: flex;
+    justify-content: space-between; /* Distribui espaço */
+    align-items: center;
+    background: white;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+    margin-top: -10px;
+}
+
+/* Caixa de conteúdo */
+.content-box {
+    background: white;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px; /* espaço entre a tabela e o footer */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Células da tabela centralizadas */
+.table th, .table td {
+    vertical-align: middle;
+    text-align: center;
+}
+
+/* Scroll interno da tabela */
+.table-scroll {
+    max-height: 300px; /* ou outro valor que quiser */
+    overflow-y: auto;
+    border: 1px solid #dee2e6;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.table-scroll table {
+    margin-bottom: 0;
+}
+
+/* Botão de alterar */
+.btn-alterar {
+    background: #facc15;
+    color: black;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.btn-alterar:hover {
+    background: #eab308;
+}
+
+/* Footer fixado ao fim do main-content */
+.footer {
+    text-align: center;
+    font-size: 12px;
+    color: #888;
+    border-top: 1px solid #ddd;
+    padding: 10px 0;
+    margin-top: auto; /* Mantém ele grudado no fim do main-content */
+}
